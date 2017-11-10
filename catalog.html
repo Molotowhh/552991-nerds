@@ -34,13 +34,17 @@
     <a class="assortment" href="#">По типу</a>
     <a class="assortment" href="#">По названию</a>
 
-    <a class="assortment control active" href="#">down</a>
-    <a class="assortment control" href="#">up</a>
+    <details>
+      <summary><a class="assortment control active" href="#">down</a></summary>
+    </details>
+      <details>
+      <summary><a class="assortment control" href="#">up</a></summary>
+    </details>
 
-    <form>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость</legend>
-        <input type="range" min="0" max="15000" step="1" value="0">
+        <input class="visually-hidden" type="range" min="0" max="15000" step="1" value="0">
       </fieldset>
 
 
@@ -48,17 +52,17 @@
       <fieldset>
         <legend>Сетка</legend>
         <label for="adaptive-select">Адаптивная</label>
-        <input id="adaptive-select" type="radio" name="grid" value="adaptive" checked>
+        <input class="visually-hidden filter-radio" id="adaptive-select" type="radio" name="grid" value="adaptive" checked>
 
 
 
         <label for="fixed-select">Фиксированная</label>
-        <input id="fixed-select" type="radio" name="grid" value="fixed">
+        <input class="visually-hidden filter-radio" id="fixed-select" type="radio" name="grid" value="fixed">
 
 
 
         <label for="rubber-select">Резиновая</label>
-        <input id="rubber-select" type="radio" name="grid" value="rubber">
+        <input class="visually-hidden filter-radio" id="rubber-select" type="radio" name="grid" value="rubber">
       </fieldset>
 
 
@@ -67,27 +71,27 @@
       <fieldset>
         <legend>Особенности</legend>
         <label for="slider">Слайдер</label>
-        <input id="slider" type="checkbox" name="features" checked>
+        <input class="visually-hidden filter-checkbox" id="slider" type="checkbox" name="features" checked>
 
 
 
 
         <label for="advantage">Блок преимуществ</label>
-        <input id="advantage" type="checkbox" name="features">
+        <input class="visually-hidden filter-checkbox" id="advantage" type="checkbox" name="features">
 
 
 
         <label for="news">Новости</label>
-        <input id="news" type="checkbox" name="features" checked>
+        <input class="visually-hidden filter-checkbox" id="news" type="checkbox" name="features" checked>
 
 
         <label for="gallery">Галлерея</label>
-        <input id="gallery" type="checkbox" name="features">
+        <input class="visually-hidden filter-checkbox" id="gallery" type="checkbox" name="features">
 
 
         <label for="basket">Корзина</label>
-        <input id="basket" type="checkbox" name="features">
-        <input type="submit" value="Показать">
+        <input class="visually-hidden filter-checkbox" id="basket" type="checkbox" name="features">
+        <button type="submit" class="filter-button button">Показать</button>
       </fieldset>
     </form>
 
@@ -97,9 +101,11 @@
 
 
     <div class="templates">
-      <h3>Sedona</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>Sedona</h3>
+      </a>
       <p>Информационный сайт для туристов</p>
-      <a class="catalog-price-button" href="">9900 руб.</a>
+      <a class="catalog-price-button" href="">900 руб.</a>
 
       <a href="catalog-sedona.html">
                <img src="img/sedonatemplate.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona">
@@ -109,7 +115,9 @@
 
 
     <div class="templates">
-      <h3>Pink app</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>Pink app</h3>
+      </a>
       <p>Продуктовый лендинг приложения под ios и Android</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -119,7 +127,9 @@
     </div>
 
     <div class="templates">
-      <h3>Barbershop</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>Barbershop</h3>
+      </a>
       <p>Сайт салон красоты. Для мужчин, да.</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -130,7 +140,9 @@
 
 
     <div class="templates">
-      <h3>Mishka</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>Mishka</h3>
+      </a>
       <p>Интернет-магазин вязаных игрушек.</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -140,7 +152,9 @@
     </div>
 
     <div class="templates">
-      <h3>A plus</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>A plus</h3>
+      </a>
       <p>Лендинг курсов повышения квалификации</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -150,7 +164,9 @@
     </div>
 
     <div class="templates">
-      <h3>Кваст</h3>
+      <a href="#" alt="модальное окно демонтстрации товара">
+        <h3>Кваст</h3>
+      </a>
       <p>Промо-сайт производителя крафтового кваса</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -200,15 +216,24 @@
     <div class="modal">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name">
-        <label for="email">Ваш email:</label>
-        <input type="text" name="post" id="email">
 
-        <b>Текст письма:</b>
-        <textarea name="comment" id="comment-field" rows=10></textarea>
+        <p class="modal-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Представьтесь,пожалуйста">
+        </p>
 
-        <input type="submit" value="Отправить">
+        <p class="modal-item">
+          <label for="email">Ваш email:</label>
+          <input type="text" name="post" id="email" placeholder="Для отправки ответа">
+        </p>
+
+        <p class="modal-item">
+          <label class="visually-hidden" for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" rows=10 placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button class="button" tybe="submit">Отправить</button>
+        <button clase="modal-close" type="button">Закрыть</button>
       </form>
     </div>
   </footer>

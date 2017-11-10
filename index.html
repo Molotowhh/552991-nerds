@@ -146,15 +146,26 @@
     <div class="modal">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
+
+        <p class="modal-item">
         <label for="name">Ваше имя:</label>
-        <input type="text" id="name">
+        <input type="text" id="name" placeholder="Представьтесь,пожалуйста">
+      </p>
+
+        <p class="modal-item">
         <label for="email">Ваш email:</label>
-        <input type="text" name="post" id="email">
+        <input type="text" name="post" id="email" placeholder="Для отправки ответа">
+      </p>
 
-        <b>Текст письма:</b>
-        <textarea name="comment" id="comment-field" rows=10></textarea>
+        <p class="modal-item">
 
-        <input type="submit" value="Отправить">
+        <label  class="visually-hidden" for="comment-field">Текст письма:</label>
+        <textarea name="comment" id="comment-field" rows=10 placeholder="В свободной форме"></textarea>
+      </p>
+
+        <button class="button" tybe="submit">Отправить</button>
+        <button clase="modal-close" type="button">Закрыть</button>
+
       </form>
     </div>
   </footer>
