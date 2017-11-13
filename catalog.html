@@ -30,21 +30,20 @@
     <!--Незнаю как разметить регулировку стоимости от и до-->
     <!--Сортировку шаблонов тоже не могу догадаться как разметить-->
 
+    <span>Сортировать:</span>
     <a class="assortment active" href="#">По цене</a>
     <a class="assortment" href="#">По типу</a>
     <a class="assortment" href="#">По названию</a>
 
-    <details>
-      <summary><a class="assortment control active" href="#">down</a></summary>
-    </details>
-      <details>
-      <summary><a class="assortment control" href="#">up</a></summary>
-    </details>
+    <a class="assortment control active" href="#">down</a>
+    <a class="assortment control" href="#">up</a>
+
+
 
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>Стоимость</legend>
-        <input class="visually-hidden" type="range" min="0" max="15000" step="1" value="0">
+        <legend>Стоимость:</legend>
+        <input type="range" min="0" max="15000" step="1" value="0">
       </fieldset>
 
 
@@ -52,17 +51,17 @@
       <fieldset>
         <legend>Сетка</legend>
         <label for="adaptive-select">Адаптивная</label>
-        <input class="visually-hidden filter-radio" id="adaptive-select" type="radio" name="grid" value="adaptive" checked>
+        <input class="filter-radio" id="adaptive-select" type="radio" name="grid" value="adaptive" checked>
 
 
 
         <label for="fixed-select">Фиксированная</label>
-        <input class="visually-hidden filter-radio" id="fixed-select" type="radio" name="grid" value="fixed">
+        <input class="filter-radio" id="fixed-select" type="radio" name="grid" value="fixed">
 
 
 
         <label for="rubber-select">Резиновая</label>
-        <input class="visually-hidden filter-radio" id="rubber-select" type="radio" name="grid" value="rubber">
+        <input class="filter-radio" id="rubber-select" type="radio" name="grid" value="rubber">
       </fieldset>
 
 
@@ -71,26 +70,26 @@
       <fieldset>
         <legend>Особенности</legend>
         <label for="slider">Слайдер</label>
-        <input class="visually-hidden filter-checkbox" id="slider" type="checkbox" name="features" checked>
+        <input class="filter-checkbox" id="slider" type="checkbox" name="features" checked>
 
 
 
 
         <label for="advantage">Блок преимуществ</label>
-        <input class="visually-hidden filter-checkbox" id="advantage" type="checkbox" name="features">
+        <input class="filter-checkbox" id="advantage" type="checkbox" name="features">
 
 
 
         <label for="news">Новости</label>
-        <input class="visually-hidden filter-checkbox" id="news" type="checkbox" name="features" checked>
+        <input class="filter-checkbox" id="news" type="checkbox" name="features" checked>
 
 
         <label for="gallery">Галлерея</label>
-        <input class="visually-hidden filter-checkbox" id="gallery" type="checkbox" name="features">
+        <input class="filter-checkbox" id="gallery" type="checkbox" name="features">
 
 
         <label for="basket">Корзина</label>
-        <input class="visually-hidden filter-checkbox" id="basket" type="checkbox" name="features">
+        <input class="filter-checkbox" id="basket" type="checkbox" name="features">
         <button type="submit" class="filter-button button">Показать</button>
       </fieldset>
     </form>
@@ -101,11 +100,10 @@
 
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>Sedona</h3>
-      </a>
+      <h3><a href="#">Sedona</a></h3>
+
       <p>Информационный сайт для туристов</p>
-      <a class="catalog-price-button" href="">900 руб.</a>
+      <a class="catalog-price-button" href="">9900 руб.</a>
 
       <a href="catalog-sedona.html">
                <img src="img/sedonatemplate.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona">
@@ -115,9 +113,8 @@
 
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>Pink app</h3>
-      </a>
+      <h3><a href="#">Pink app</a></h3>
+
       <p>Продуктовый лендинг приложения под ios и Android</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -127,9 +124,7 @@
     </div>
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>Barbershop</h3>
-      </a>
+      <h3><a href="#">Barbershop</a></h3>
       <p>Сайт салон красоты. Для мужчин, да.</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -140,9 +135,7 @@
 
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>Mishka</h3>
-      </a>
+      <h3><a href="#">Mishka</a></h3>
       <p>Интернет-магазин вязаных игрушек.</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -152,9 +145,7 @@
     </div>
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>A plus</h3>
-      </a>
+      <h3><a href="#">A plus</a></h3>
       <p>Лендинг курсов повышения квалификации</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -164,9 +155,7 @@
     </div>
 
     <div class="templates">
-      <a href="#" alt="модальное окно демонтстрации товара">
-        <h3>Кваст</h3>
-      </a>
+      <h3><a href="#">Кваст</a></h3>
       <p>Промо-сайт производителя крафтового кваса</p>
       <a class="catalog-price-button" href="">9900 руб.</a>
 
@@ -214,26 +203,31 @@
     </div>
 
     <div class="modal">
-      <h2>Напишите нам</h2>
+
       <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Напишите нам:</legend>
+            <p class="modal-item">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Представьтесь,пожалуйста">
+            </p>
 
-        <p class="modal-item">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Представьтесь,пожалуйста">
-        </p>
 
-        <p class="modal-item">
-          <label for="email">Ваш email:</label>
-          <input type="text" name="post" id="email" placeholder="Для отправки ответа">
-        </p>
 
-        <p class="modal-item">
-          <label class="visually-hidden" for="comment-field">Текст письма:</label>
-          <textarea name="comment" id="comment-field" rows=10 placeholder="В свободной форме"></textarea>
-        </p>
+          <p class="modal-item">
+            <label for="email">Ваш email:</label>
+            <input type="text" name="post" id="email" placeholder="Для отправки ответа">
+          </p>
 
-        <button class="button" tybe="submit">Отправить</button>
-        <button clase="modal-close" type="button">Закрыть</button>
+
+          <p class="modal-item">
+            <label for="comment-field">Текст письма:</label>
+            <textarea name="comment" id="comment-field" rows=10 placeholder="В свободной форме"></textarea>
+          </p>
+
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
+        </fieldset>
       </form>
     </div>
   </footer>
