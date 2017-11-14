@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  text-transform: lowercase;
   background-color: #ffffff;
 }
 
@@ -38,12 +37,7 @@ a {
   color: #fb565a;
 }
 
-.site-navigation a:focus {
-  text-decoration: underline;
-  text-decoration-color: #fb565a;
-}
-
-.basket a:hover {
+.basket:hover {
   color: #fb565a;
 }
 
@@ -55,44 +49,33 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
-  text-transform: none;
 }
 
 .services p {
   color: #283136;
   font-size: 16px;
   line-height: 24px;
-  text-transform: none;
 }
 
 .order-button-one {
-  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #fb565a;
-  border: none;
 }
 
 .order-button-two {
-  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #00ca74;
-  border: none;
 }
 
 .order-button-three {
-  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #efc84a;
-  border: none;
 }
 
 .order-button-one:hover, .order-button-one:focus {
@@ -119,23 +102,21 @@ a {
   background-color: #e5a722;
 }
 
-.studio .studio-caption {
+.studio-caption {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
-  text-transform: none;
 }
 
-.studio p {
-  text-transform: none;
+.orders {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .development-orders {
   list-style: none;
-}
-
-.type-orders {
-  text-transform: none;
 }
 
 .indicators {
@@ -147,32 +128,34 @@ a {
 }
 
 .statistics p {
-  font-weight: bold;
-  text-transform: none;
+  font-weight: 700;
+  color: #000000;
+}
+
+.digits {
+  list-style: none;
+  font-weight: 700;
+  font-size: 45px;
+  color: #000000;
 }
 
 .project {
   list-style: none;
 }
 
-/* Как оформить логотипы ? прозрачность и тп */
-
 .maps h4 {
-  text-transform: none;
   font-size: 18px;
   line-height: 30px;
-  color: 000000;
+  color: #000000;
 }
 
 .maps p {
-  text-transform: none;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .maps input {
-  font: inherit;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
@@ -190,11 +173,9 @@ a {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  text-transform: none;
 }
 
 .sort {
-  text-transform: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -205,7 +186,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .assortment:hover {
@@ -225,6 +206,86 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+}
+
+.filter label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20;
+  color: #283136;
+}
+
+.filter label:hover {
+  color: #000000;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  opacity: 0, 3;
+}
+
+.templates-caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.templates p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-price-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.catalog-price-button:hover {
+  background-color: #e74246;
+}
+
+.catalog-price-button:active {
+  background-color: #d7373b;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:focus {
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a:active {
+  background-color: #ffffff;
+  border-color: #dbdbdb;
 }
 
 .social-networks {
@@ -249,15 +310,10 @@ a {
 }
 
 .footer-social b {
-  text-transform: none;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  color: 000000;
-}
-
-.footer-social p {
-  text-transform: none;
+  color: #000000;
 }
 
 .modal {
@@ -266,7 +322,6 @@ a {
 }
 
 .modal legend {
-  text-transform: none;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -277,7 +332,6 @@ a {
   font-weight: regular;
   line-height: 18px;
   color: #000000;
-  text-transform: none;
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
@@ -295,7 +349,6 @@ a {
   font-weight: regular;
   line-height: 18px;
   color: #000000;
-  text-transform: none;
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
@@ -309,14 +362,12 @@ a {
 }
 
 .feedback-form .modal-item {
-  text-transform: none;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
 }
 
 .feedback-form .button {
-  font: inherit;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
