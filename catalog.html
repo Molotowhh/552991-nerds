@@ -7,13 +7,15 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/outline.css" rel="stylesheet">
+
 </head>
 
 <body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html.html">
-                  <img src="img/nerd-logo.svg" width="667" height="271" alt="Логотип Веб-студии Nerds">
+                  <img src="img/nerd-logo.svg" width="160" height="65" alt="Логотип Веб-студии Nerds">
                 </a>
 
       <ul class="site-navigation">
@@ -24,15 +26,16 @@
       </ul>
 
       <a class="basket" href="#">Корзина</a>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
+
     </nav>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
   </header>
   <main class="container">
 
     <!--Незнаю как разметить регулировку стоимости от и до-->
     <!--Сортировку шаблонов тоже не могу догадаться как разметить-->
-
+    <div class="wrapper">
     <span class="sort">Сортировать:</span>
     <a class="assortment active" href="#">По цене</a>
     <a class="assortment" href="#">По типу</a>
@@ -40,9 +43,10 @@
 
     <a class="assortment control active" href="#">down</a>
     <a class="assortment control" href="#">up</a>
+  </div>
 
 
-
+    <div class="catalog-columns">
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость:</legend>
@@ -101,7 +105,7 @@
 
     <h2 class="visually-hidden">Шаблоны</h2>
 
-
+    <div class="templates-wrapper">
     <div class="templates">
       <h3 class="templates-caption"><a href="#">Sedona</a></h3>
 
@@ -166,6 +170,7 @@
               <img src="img/kvasttemplate.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса">
             </a>
     </div>
+  </div>
 
 
     <ul class="pagination-list">
@@ -174,6 +179,7 @@
       <li class="pagination-item"><a href="#">3</a></li>
       <li class="pagination-item"><a href="#">Следующая</a></li>
     </ul>
+  </div>
 
     <img src="img/map1.jpg" width="1440" height="416" alt="Карта">
 
